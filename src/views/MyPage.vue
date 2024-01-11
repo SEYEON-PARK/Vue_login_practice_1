@@ -27,7 +27,7 @@
           userOther : JSON.parse(localStorage.getItem('userOther')),
         }
     },
-    async created(){
+    async beforeMount() {
         await this.$store.dispatch('fetchUser');
         console.log(localStorage);
         // console.log(this.$store.state.user);
@@ -45,6 +45,7 @@
     },
   },
   */
+  
     methods:{
        
       }   
